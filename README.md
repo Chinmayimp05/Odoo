@@ -10,8 +10,6 @@ SynergySphere is a project management application built as a full-stack web app 
 
 This README provides setup and usage instructions for both backend and frontend.
 
----
-
 ## Backend
 
 ### Technology Stack
@@ -28,31 +26,19 @@ This README provides setup and usage instructions for both backend and frontend.
 1. Go to the backend folder:
 cd backend
 
-text
-
 2. Install dependencies:
 npm install
-
-text
 
 3. Create a `.env` file in the backend root, example contents:
 PORT=5000
 DATABASE_URL=sqlite:./database.sqlite
 JWT_SECRET=your_secret_key_here
-
-text
-
 4. Run backend development server:
 npm run dev
-
-text
 
 5. Backend API will run at:
 http://localhost:5000/api
 
-text
-
----
 
 ## Frontend
 
@@ -67,30 +53,14 @@ text
 
 1. Go to the frontend folder:
 cd frontend
-
-text
-
 2. Install dependencies:
 npm install
-
-text
-
 3. Create a `.env` file in the frontend root with backend API URL:
 VITE_API_BASE_URL=http://localhost:5000/api
-
-text
-
 4. Run frontend development server:
 npm run dev
-
-text
-
 5. Access the frontend app in your browser at:
 http://localhost:5173
-
-text
-
----
 
 ## Usage
 
@@ -109,44 +79,7 @@ text
 - For database schema changes, prefer migrations rather than direct sync with `alter: true` to preserve data.
 - Error handling is centralized via backend middleware for consistent API error responses.
 
----
-
-## Project Structure Overview
-
-### Backend
-
-backend/
-├── controllers/
-├── middleware/
-├── models/
-├── routes/
-├── config/
-├── .env
-├── .gitignore
-├── index.js
-├── package.json
-
-text
-
-### Frontend
-
-frontend/
-├── src/
-│   ├── api.js # Axios instance with base URL and auth
-│   ├── components/
-│   ├── views/
-│   ├── App.jsx # Routing with protected routes
-├── .env
-├── .gitignore
-├── index.html
-├── package.json
-
-text
-
----
 
 ## Contact
 
 For questions, issues, or contributions, please open an issue or contact the maintainer.
-
----
